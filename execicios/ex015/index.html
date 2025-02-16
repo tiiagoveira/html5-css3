@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estilos Externos</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            h1 {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body >
+        <h1 style="text-decoration: none; color: black;">Utilizado na parte do (head) para ter um link para a folha de estilo css</h1>
+        <pre>
+            &lt;link rel="stylesheet" href="style.css"&gt;
+        </pre>
+
+         
+        <h1>Utilizando Externos</h1>
+        <h3>Está parte de CSS é feita na folha de estilo (externa)</h3>
+        <pre>
+                @charset "UTF-8";                                   * informando que pode ter caracteres especiais
+
+                body {
+                    background-color: lightskyblue;                 * cor de fundo
+                    font-family: Arial, Helvetica, sans-serif;      * tipo da fonte
+                    font-size: 20px;                                * tamanho da fonte em (px)
+                }
+
+                h1 {
+                    color: darkblue;                                * cor da fonte
+                    background-color: lightblue;                    * cor de fundo da fonte
+                    font-size: 1.5em;                               * tamanho da fonte em (em)
+                }
+
+                h2 {
+                    color: darkred;                                 * cor da fonte
+                    font-size: 1.2em;                               * tamanho da fonte em (em)
+                }
+
+                p {
+                    text-align: justify;                            * alinhamento da fonte
+                }
+        </pre>
+
+        <h1>Título 1 (h1) - Primeiro</h1>
+        <h2>Título 2 (2) - Primeiro</h2>
+        <p>Parágrafo - Primeiro</p>
+        
+        <h2>Título 2 (2) - Segundo</h2>
+        <p>Parágrafo - Segundo</p>
+        
+        <h1>Título 1 (h1) - Segundo</h1>
+        <h2>Título 2 (2) - Terceiro</h2>
+        <p>Parágrafo - Terceiro</p>
+        <p style="text-align: right;"><a href="pagina02.html" target="_self">Ir para a página 2</a></p>
+    </body>
+</html>

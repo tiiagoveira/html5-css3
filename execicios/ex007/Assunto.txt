@@ -1,0 +1,18 @@
+b - destaca com negrito (não semântica)
+strong - destaca com negrito (semântica)
+
+i - destaca com itálico (não semântica)
+em - destaca com itálico (semântica)
+
+mark - faz marcação com cor no texto
+
+small - deixa o texto pequeno
+
+del - destaca algo que deve ser lido, mas não considerado(grifado)
+
+u - destaca com sublinhado (não semântica)
+ins - destaca com sublinhado algo que foi inserido (semântica)
+
+sup - suspende o texto selecionado
+
+sub - abaixa o texto selecionado

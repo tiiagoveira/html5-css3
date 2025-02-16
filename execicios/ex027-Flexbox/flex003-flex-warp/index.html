@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felxible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            display: flex;
+
+            /*
+                (flex-warp) informa qual o sentido que o itens irão ao diminuir a tela ou quando não couber mais dentro do espaço do conteiner
+                    (warp) - quebra o item no sentido do (flex-direction)
+                    (nowarp) - não irá ter quebra de item
+                    (warp-reverse) - quebra o item no sentindo inverso do (flex-direction)
+            */
+            flex-wrap: wrap;
+            
+        }
+
+        div.item {
+            background-color: aqua;
+            border: 1px, solid black;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gouping Tags</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: dimgray;
+                margin: 0;
+            }
+
+            header {
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            nav {
+                background-color: rgb(102, 102, 102);
+                padding: 3px;
+                box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            }
+
+            nav > a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                margin-right: 30px;
+            }
+
+            nav > a:hover {
+                text-decoration: underline;
+                box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            }
+
+            main {
+                background-color: white;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 20px;
+            }
+
+            article {
+                background-color: lightgray;
+                padding: 5px;
+            }
+
+            article > aside {
+                background-color: rgb(165, 165, 165);
+            }
+
+            footer {
+                background-color: black;
+                color: white;
+                text-align: right;
+                padding: 4px;
+                margin: 0px;
+            }
+
+            footer > p {
+                margin: 0px;
+            }
+
+            div#bola {
+                height: 100px;
+                width: 100px;
+                margin: 10px;
+                background-color: white;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>                        <!-- utilizado para cabeçalho -->
+            <h1>Meu site</h1>
+            <nav>                       <!-- utilizado para navegação (menu) -->
+                <a href="#">Esporte</a>
+                <a href="#">Notícias</a>
+                <a href="#">Mundo</a>
+                <a href="#">Livros</a>
+                <a href="#">Séries</a>
+            </nav>
+        </header>
+        <main>                          <!-- utilizado para o conteúdo principal-->
+            <section>
+                <p>Esporte Política Tecnologia</p>
+            </section>
+            <section id="noticias">
+                <article>
+                    <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse commodi similique. Esse aut voluptatem laudantium ipsum quae veniam ab consequatur. Quaerat ullam similique fugit et amet deleniti eaque quas.</p>
+                    <aside>
+                        <p>Artigo escrito por José da Silva</p>
+                    </aside>
+                </article>
+                <article>
+
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido pelo CursoemVideo</p>
+        </footer>
+        <div id="bola"></div>
+    </body>
+</html>

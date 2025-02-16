@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felxible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: aqua;
+            border: 1px, solid black;
+            text-align: center;
+            flex-basis: 300px;
+        }
+
+        /*
+            o (flex) é para subistituir e ou ficar de forma mais simplificada os valores
+            do (flex-basis), (flex-grow) e (flex-shrink) em uma só na ordem...
+            flex: (flex-grow  flex-shrink  flex-basis)
+
+                padrões
+                        flex-grow      flex-shrink     flex-basis
+            1   flex:   0              1               auto
+            2   flex:   0              0               auto
+            3   flex:   1              1               auto
+
+                ou também pode ser
+            1   flex: initial
+            2   flex: none
+            3   flex: auto
+
+            que tem o mesmo resultado dos padrões de cada elemento
+
+        */
+        div#cxA {
+            flex: 0 0 300px;
+        }
+
+        div#cxB {
+            flex: 1 1 300px;
+        }
+
+        div#cxC {
+            flex: 4 0 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>

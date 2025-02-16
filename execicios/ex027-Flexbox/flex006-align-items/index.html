@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felxible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            height: 150px;
+            display: flex;
+            flex-flow: row wrap-reverse;
+
+            /*
+                (justify-content) é para os itens do (main-axis) sentido horizontal
+                    (flex-star) - coloca na parte do inicio da main dependendo de qual é a sua (flex-direction)
+                    (flex- end) - coloca na parte do final da main dependendo de qual é a sua (flex-direction)
+                    (center) - centraliza
+                    (space-between) - coloca um item no começo e um no final e ajustas o espaço entre os outros dividindo igualmente
+                    (space-evenly) - pega todos os itens e divide espaço entre eles igualmente diferente do de cima, tbm coloca uma espaço no começo e no final
+                    (space-around) - pega cada item e coloca dentro de um cloco o centrelizando e divide entre todo o conteiner
+            */
+            justify-content: space-around;
+            
+            /*
+                (align-items) é para os itens do (cross-axis) sentido vertical  
+                    (strech) - estica verticalmente
+                    (flex-star) - coloca na parte do inicio da croos dependendo de qual é a sua (flex-direction)
+                    (flex- end) - coloca na parte do final da cross dependendo de qual é a sua (flex-direction)
+            */
+            align-items: flex-end;
+            
+            
+        }
+
+        div.item {
+            background-color: aqua;
+            border: 1px, solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Executando A</div>
+        <div class="item">Executando B</div>
+        <div class="item">Executando C</div>
+        <div class="item">Executando D</div>
+        <div class="item">Executando E</div>
+        <div class="item">Executando F</div>
+        <div class="item">Executando G</div>
+    </div>
+</body>
+</html>

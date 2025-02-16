@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felxible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            /*
+                (align-content:) é para os itens do (cross-axis) sentido vertical
+                    (flex-star) - coloca na parte do inicio da cross dependendo de qual é a sua (flex-direction)
+                    (flex- end) - coloca na parte do final da cross dependendo de qual é a sua (flex-direction)
+                    (center) - centraliza
+                    (space-between) - coloca um item no começo e um no final e ajustas o espaço entre os outros dividindo igualmente
+                    (space-evenly) - pega todos os itens e divide espaço entre eles igualmente diferente do de cima, tbm coloca uma espaço no começo e no final
+                    (space-around) - pega cada item e coloca dentro de um cloco o centrelizando e divide entre todo o conteiner
+            */
+            align-content: space-between;
+        }
+
+        div.item {
+            background-color: aqua;
+            border: 1px, solid black;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+        <div class="item">N</div>
+        <div class="item">O</div>
+    </div>
+</body>
+</html>

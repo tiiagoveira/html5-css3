@@ -1,0 +1,16 @@
+a href=" " target=" " rel=" " - utilizado para adicionar links
+	href=" " - informa a url do link
+		Ex: "https://youtube.com/cursoemvideo/"
+        target=" " - informa como quer abrir o link
+		Ex: "_blank"
+        rel=" " - informa o tipo de link, se é de externo, pagina anterior ou próximo (interno) e etc...
+		Ex: "external"
+            
+
+a href=" " download=" " type=" " - utilizado para adicionar links para download
+	href=" " - informa a url do arquivo
+		Ex:"livro/FJ11_Java_e_Orientacoes_a_Objetos.zip"
+        download=" " - informa o nome e a extensão do arquivo
+		Ex: "FJ11_Java_e_Orientacoes_a_Objetos.pdf"
+        type=" " - informa o tipo do arquivo com (application/) antes para realizar a ação
+		Ex: "application/zip"

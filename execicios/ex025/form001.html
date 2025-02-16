@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Primeiro Formulario</h1>
+    <!--(action) para informar com qual linguagem a funcao ira interagir-->
+    <!--(autocomplete) eh para ter o assistente de completar os preenchimentos-->
+    <!--(method) eh para saber se quer visivel ou n na url os dados preenchidos no formulario-->
+        <!--(GET) deixa visivel-->
+        <!--(POST) n deixa visivel-->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <!--(label) eh para fazer a relacao entre o campor de preenchimento e o texto-->
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <!--criando o botao de submissao-->
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

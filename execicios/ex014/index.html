@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Utilizando Estilos Locais / Internos</title>
+        <style>
+            body {
+                background-color: lightskyblue;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+            
+            h1 {
+                color: darkblue;
+                background-color: lightblue;
+                font-size: 1.5em;
+            }
+
+            h2 {
+                color: darkred;
+                font-size: 1.2em;
+            }
+
+            p {
+                text-align: justify;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Utilizando Estilos Locais / Internos</h1>
+        <h3>Está parte de (CSS) é feita na (head)</h3>
+        <pre>
+            &lt;style&gt;
+                body {
+                    background-color: lightskyblue;                 * cor de fundo
+                    font-family: Arial, Helvetica, sans-serif;      * tipo da fonte
+                    font-size: 20px;                                * tamanho da fonte em (px)
+                }
+            
+                h1 {
+                    color: darkblue;                                * cor da fonte
+                    background-color: lightblue;                    * cor de fundo da fonte
+                    font-size: 1.5em;                               * tamanho da fonte em (em)
+                }
+                h2 {
+                    color: darkred;                                 * cor da fonte
+                    font-size: 1.2em;                               * tamanho da fonte em (em)
+                }
+                p {
+                    text-align: justify;                            * alinhamento da fonte
+                }
+            &lt;/style&gt;
+        </pre>
+
+        <h1>Título 1 (h1) - Primeiro</h1>
+        <h2>Título 2 (2) - Primeiro</h2>
+        <p>Parágrafo - Primeiro</p>
+        
+        <h2>Título 2 (2) - Segundo</h2>
+        <p>Parágrafo - Segundo</p>
+        
+        <h1>Título 1 (h1) - Segundo</h1>
+        <h2>Título 2 (2) - Terceiro</h2>
+        <p>Parágrafo - Terceiro</p>
+    </body>
+</html>

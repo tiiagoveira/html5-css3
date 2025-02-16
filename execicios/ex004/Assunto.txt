@@ -1,0 +1,6 @@
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	rel - elemento de relacionamento
+	href - diretório, nome e extensão da image
+	type - tipo da imagem
+
+O comando é feito na parte do HEAD

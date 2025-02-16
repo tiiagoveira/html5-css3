@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedado localmente</h1>
+    <h2>vídeo hospedado no próprio servidor.</h2>
+    <h3>Primeira forma</h3>
+    &lt;video src=" " width=" " controls&gt; &lt;/video&gt;
+    <pre>
+        src: informa o caminho, nome e extensão do vídeo
+
+        width: informa o tamananho da janela do vídeo
+
+        controls: mostra os controles de execução do vídeo
+    </pre>
+    <br>
+    <video src="midia/12248500 1920 1080 30Fps.mp4" width="500" controls></video>
+
+    <h3>Segunda forma</h3>
+    <pre>
+        &lt;video width=" " poster=" " controls&gt;
+            &lt;source src=" " type=" "&gt; - primeir formato de video a tentar abrir
+            &lt;source src=" " type=" "&gt; - segundo formato de video a tentar abrir
+            &lt;source src=" " type=" "&gt; - terceiro formato de video a tentar abrir
+            &lt;p&gt;Seu navegador não tem compatibilidade com reprodução de vídeos.&lt;/p&gt; - mensagem caso não abra nenhum a cima
+        &lt;/video&gt;
+
+            poster: imagem a ser mostrada enquanto o vídeo está carregado
+    </pre>
+    <br>
+    <video width="500" poster="" controls>  
+        <source src="midia/12248500 1920 1080 30Fps.mp4" type="video/mp4">
+        <source src="midia/12248500_1920_1080_30fps.mp4" type="video/mp4">
+        <source src="midia/12248500 1920 1080 30Fps.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <h3>Terceira forma</h3>
+    &lt;iframe&gt; &lt;/iframe&gt; permite inserir conteúdos externos em uma página, como vídeos, banners, visualizações de arquivos, entre outros.
+    <pre>
+        &lt;iframe width=" " height=" " src=" " title=" " frameborder=" " allow=" " referrerpolicy=" " allowfullscreen&gt;&lt;/iframe&gt; 
+    
+            width: largura da janela do video
+
+            height: altura da janela do video
+
+            src: informa o caminho, nome e extensão do vídeo
+
+            title: título do video
+
+            frameborder: informa se a janela do video vai ter borda ou não
+                1 - para ter borda
+                0 - para não ter borda
+
+            allow: especifica os recursos que o conteúdo do iFrame pode usar, como: Geolocalização, Acesso à câmera, Reprodução automática
+
+            referrerpolicy: controla a quantidade de informações de referenciador que são enviadas quando o conteúdo do iFrame é carregado.
+
+            allowfullscreen: define se o iFrame pode ser colocado em tela cheia
+    </pre>
+    <br>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=HRmzLSFISkj6JJbT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

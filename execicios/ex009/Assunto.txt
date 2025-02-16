@@ -1,0 +1,15 @@
+ol - lista ordena
+	type - tipo da lista se é numérica, alfabética
+	start - de onde quer começar a lista
+
+ul - lista não ordena
+	type - qual tipo da marcação da lista
+
+li - adiciona item a lista
+
+
+dl - lista de definição
+
+dt - item a ser definido
+
+dd - definição do item escolhido na dt

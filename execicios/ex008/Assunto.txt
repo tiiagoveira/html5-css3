@@ -1,0 +1,7 @@
+pre - utilizado para respeitar o espaço no inicio da linha de acordo de como você escreve
+cod - utilizado para endentação das letras para terem o mesmo espaço de largura, utilizada para representar códigos
+q - adiciona aspas duplas entendendo que é um citação simples
+blockquote - para citação completas com deslocamento
+
+<abbr title=""> - deixa o texto pontilhado indicando é uma abreviação
+	title - significado da abreviação

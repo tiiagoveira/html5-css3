@@ -1,0 +1,17 @@
+br - quebra de linha
+
+&lt; - adiciona o símbolo de menor ao texto
+&gt; - adiciona o símbolo de maior ao texto
+&reg; - marca registrada
+&copy; - copyright
+&trade; - marca registrada em inglês 
+&euro; - símbolo do Euro
+&pound; - símbolo da Libra
+&yen; - símbolo do Yen
+&cent; - símbolo do Cents
+&delta; - símbolo do Delta minúsculo
+&Delta; - símbolo do Delta maiúsculo
+&uparrow; - símbolo da seta para cima
+&uarr; - símbolo da seta para cima utilizando abreviação 
+&#x1F596; - adicionando um emoji
+

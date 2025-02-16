@@ -1,0 +1,2 @@
+style - utilizado no (head) para comandos CSS
+address - destaca endereços, deixando a escrita em itálico

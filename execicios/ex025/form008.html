@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="in1">Numero 1:</label>
+            <!--(oninput) segnifica que quando eu entrar com dados (entra comando javascript)-->
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <P>
+            <label for="in1">Numero 2:</label>
+            <!--(oninput) para entrada de dados via javascript-->
+            <!--(isoma) eh a id da minha variavel output-->
+            <!--(innerHTML) o html que estiver dentro, ira mandar para o valor do output-->
+            <!--(Number(in1.value) + Number(in2.value)) valor no in1 + o valor no in2-->
+            <input type="number" name="n1" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </P>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <!--(output) eh apenas para mostra coisas na tela e n para enviar ou ser guardado-->
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <P>
+            <input type="submit">
+            <input type="reset">
+        </P>
+    </form>
+</body>
+</html>

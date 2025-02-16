@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+table {
+    border-collapse: collapse;
+}
+
+tbody {
+    text-align: center;
+}
+
+caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+thead > tr > th {
+    background-color: gray;
+    color: white;
+}
+
+.mediaExatas {
+    background-color: gray;
+    color: white;
+    text-align: left;
+}
+
+.resultadoExatas {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}

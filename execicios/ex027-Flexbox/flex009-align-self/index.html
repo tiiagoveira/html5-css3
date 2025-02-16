@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felxible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightcoral;   
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+        }
+
+        div.item {
+            background-color: aqua;
+            border: 1px, solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /*
+            (align-self) serve os itens no sentido do (cross-axis / vertical) para terem comportamentos individuais
+                (auto) ou (inherit) - fica a mesma propriedade do pai que é o valor do (align-items)
+                (flex-star) - coloca na parte do inicio da main dependendo de qual é a sua (flex-direction) 
+                (flex-end) - coloca na parte do final da main dependendo de qual é a sua (flex-direction)
+                (center) - centraliza o item
+                (stretch) - estica o item
+        */
+        div#i1 {
+            align-self: stretch;
+        }
+
+        div#i2 {
+            align-self: auto;
+        }
+
+        div#i3 {
+            align-self: flex-end;
+        }
+
+        div#i4 {
+            align-self: flex-start;
+        }
+
+        div#i5 {
+            align-self: center;
+        }
+
+        div#i6 {
+            align-self: flex-end;
+        }
+
+        div#i7 {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>

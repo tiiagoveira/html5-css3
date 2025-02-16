@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    &lt;a href=" " target=" " rel=" "&gt; - utilizado para adicionar links
+    <pre>
+        href - url ou caminho da página a ser exibida
+        
+        target - como esse link irá abrir
+            "_blank" - abrir em uma nova aba
+            "_parent" - abre o link no frame do elemento pai
+            "_self" - abre na mesma página
+            "_top" - abre um link vinculado em todo o corpo da janela
+        
+        rel - relação entre a página de origem e o destino do link
+            "external" - externo
+            "next" - proxima página
+            "prev" - página anterior
+            "nofollow" - indicar aos mecanismos de busca que um link não deve ser seguido
+    </pre>
+
+    <p>quando se quer voltar para a página inicial e a página atual está em uma pasta diferente utiliza-se no (href) o ( . . / ) mais o nome da página</p>
+    <br>
+
+    <p>Link para o <a href="https://www.youtube.com/" target="_blank" rel="external">YouTube</a></p>
+    
+    <h1>Usando links internos</h1>
+    <p>No caso de internos basta colocar no (href) o nome da página caso não esteja em nenhuma pasta</p>
+    <p><a href="pag002.html" target="_self" rel="next">Página 2</a></p>
+    <br>
+
+    <p>se estiver em alguma pasta, adicione o caminho de onde ele está antes do nome da página</p>
+    <p><a href="noticias/pag003.html" target="_self" rel="next">Página 3</a></p>
+
+    <h1>Links para download</h1>
+    &lt;a href=" " download=" " type=" "&gt;
+    <pre>
+        href - url ou caminho do local do arquivo
+        
+        download - nome e extenção do arquivo
+        
+        type - tipo do arquivo informando que é uma aplicação (operação)
+            "application/zip"
+    </pre>
+    <ul>
+        <li><a href="livro/FJ11_Java_e_Orientacoes_a_Objetos.pdf" download="FJ11_Java_e_Orientacoes_a_Objetos.pdf" type="application/pdf">Baixar livro em PDF</a></li>
+        <li><a href="livro/FJ11_Java_e_Orientacoes_a_Objetos.zip" download="FJ11_Java_e_Orientacoes_a_Objetos.pdf" type="application/zip">Livro compactado em zip</a></li>
+    </ul>
+</body>
+</html>

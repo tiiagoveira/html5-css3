@@ -1,0 +1,5 @@
+<img src=" " alt=" "> - adiciona imagem
+	src - diretório, nome e extensão da imagem
+		Ex: "imagens/logo-html5-150.png"
+	alt - título/descrição para a imagem
+		Ex: "logo HTML5"
