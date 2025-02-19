@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vídeos em HTML5</title>
+    </head>
+    <body>
+        <h1>Inserindo vídeos hospedado localmente</h1>
+        <h3>Primeira forma</h3>
+        <p>Os resultados são os memso, porém muda a forma de fazer</p>
+        <video src="midia/12248500 1920 1080 30Fps.mp4" width="500" controls></video>
+
+        <h3>Segunda forma</h3>
+        <video width="500" poster="" controls>  
+            <source src="midia/12248500 1920 1080 30Fps.mp4" type="video/mp4">
+            <source src="midia/12248500_1920_1080_30fps.mp4" type="video/mp4">
+            <source src="midia/12248500 1920 1080 30Fps.webm" type="video/webm">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        </video>
+
+        <h1>Inserindo vídeos do YouTube</h1>
+        <h3>Terceira forma</h3>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=HRmzLSFISkj6JJbT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </body>
+</html>
